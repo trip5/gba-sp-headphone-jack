@@ -3,6 +3,29 @@
  
  There's a few options to choose. None are perfectly ideal IMO - there isn't a lot of space to fit the headphone jack. Consider the pros and cons of each before committing - remember to consider ergonomics and where you hands will usually rest.
 
+ ## Direct connection warning
+
+ Also, please note that Gekkio cautions doing direct connections:
+
+> PSA: if you've added a headphone jack to a Game Boy Advance SP and didn't add any capacitors as part of the mod, you may have created a Headphone Destroyer Mod ™
+> I'll need to do some testing after work to verify this, but here's an example calculation:
+> 
+> let's say you've bought AKG N40 earbuds, which cost $399.95. Specs:
+> 
+> Impedance: 20 ohm
+> MAX input power 10mW
+> 
+> let's assume the Advance SP audio amplifier puts the DC offset at half of the supply voltage. I'll check the real value after work, but this is a reasonable assumption for now. For a stock 3.8V battery that means 1.9V
+> so V=1.9V, R=56+20 -> P=VxV/R=1.9*1.9/76=47.5 mW
+> 
+> 47.5mW > 10mW
+> -> bye AKG
+> 
+
+As a solution, makho suggests this:
+
+> Instead, add 100 uF (or more) 6.3V (or more) capacitor in series for both channels. Positive side goes to the test point, and negative side to the corresponding jack pin. Alternatively, use an isolated switch between the switch pin and system ground instead of using system ground (gnd) as audio ground (agnd) on the headphone jack to switch to the switch pin.
+
 ## Under power LEDs
 Might affect ergonomics! I personally have [no issue](under-power-LED-ergonomics.jpg).
 
@@ -12,6 +35,7 @@ Preview | Links and info
 ![](thumbnails/imgur-da826qH.jpg) | [imgur post](https://imgur.com/a/da826qH), [Github backup](backups/imgur-da826qH/)
 ![](thumbnails/discord-orangeglo.png) | [discord post](https://discordapp.com/channels/246604458744610816/332487777986019337/734842804538179667), [Github backup](backups/discord-orangeglo.png)
 ![](thumbnails/youtube-W3H48VH9VDw.png) | [Youtube video](https://www.youtube.com/watch?v=W3H48VH9VDw)
+![](thumbnails/gameboy-subreddit-FollowTheTrailofDead.jpg) | uses capacitors! [reddit post](https://www.reddit.com/r/Gameboy/comments/1l676l4/gameboy_advance_headphone_mod_and_a_misadventure/), [Github backup](backups/gameboy-subreddit-FollowTheTrailofDead/)
 
 ## Inside top screen
 Requires IPS screen mod to free up enough space.
